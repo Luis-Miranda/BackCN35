@@ -3,7 +3,7 @@ const { GraphQLServer, PubSub } = require('graphql-yoga');
 const { importSchema } = require('graphql-import');
 const { makeExecutableSchema } = require('graphql-tools');
 const resolvers = require('./src/resolvers');
-const AuthDirective = require('./src/resolvers/Directives/AuthDirectives');
+const AuthDirective = require('./src/resolvers/Directives/ClienDirectives');
 const verifyToken = require('./src/utils/verifyToken');
 
 const mongoose = require('mongoose');
