@@ -33,7 +33,7 @@ const updateOneOrder = async (_, {id,data}, { user }) => {
     return order;
 };
 
-const deleteOneOreder = async (_, { id }, { user }) => {
+const deleteOneOrder = async (_, { id }, { user }) => {
     const order = await deleteOrder(id, user);
     if (!order) throw new Error('Order not exist');
     return 'Order deleted';

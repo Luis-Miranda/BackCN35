@@ -1,5 +1,5 @@
-const ClientResolvers = require('./ClientResolvers/Index');
-const OrderResolvers = require('./OrderResolvers');
+const ClientResolver = require('./ClientResolvers/Index');
+const OrderResolver = require('./OrderResolvers');
 const {
     EmailAddressResolver,
     URLResolver,

@@ -1,20 +1,20 @@
 const {
-    getAllAuthors,
-    getOneAuthor
-} = require('../../services/AuthorService');
+    getAllClients,
+    getOneClient
+} = require('../../services/ClientServices');
 
-const getAuthors = async () => {
-    const authors = await getAllAuthors();
-    return authors;
+const getClients = async () => {
+    const clients = await getAllClients();
+    return clients;
 };
 
-const getSingleAuthor = async (_, { id }) => {
-    const author = await getOneAuthor(id);
-    if(!author) throw new Error('Author not exist');
-    return author;
+const getSingleClient = async (_, { id }) => {
+    const client = await getOneClient(id);
+    if(!client) throw new Error('Client not exist');
+    return client;
 };
 
 module.exports = {
-    getAuthors,
-    getSingleAuthor
+    getClients,
+    getSingleClient
 };
