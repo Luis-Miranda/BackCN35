@@ -1,4 +1,4 @@
-const { Clients } = require('../models');
+const { Clients } = require('../model');
 
 const createClient = (data) => Clients.create(data);
 
