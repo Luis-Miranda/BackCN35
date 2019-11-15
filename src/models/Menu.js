@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const MenuSchema = new Schema({
+const menuSchema = new Schema({
     platillo: {
         type:String,
         required:true
@@ -51,7 +51,7 @@ const carritoSchema = new Schema ({
 
 }, { timestamps:true })
 
-const Comida = mongoose.model('Comida', foodSchema);
+const Comida = mongoose.model('Comida', menuSchema);
 const carrito = mongoose.model('carrito', carritoSchema);
 const items = mongoose.model('items', itemsSchema);
 

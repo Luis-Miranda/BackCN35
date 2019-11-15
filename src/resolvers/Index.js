@@ -1,4 +1,4 @@
-const ClientResolver = require('./ClientResolvers/Index');
+const ClientResolver = require('./ClientResolvers');
 const OrderResolver = require('./OrderResolvers');
 const {
     EmailAddressResolver,
