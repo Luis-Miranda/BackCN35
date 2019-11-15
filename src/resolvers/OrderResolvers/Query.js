@@ -1,7 +1,7 @@
 const {
     getAllClients,
     getOneClient
-} = require('../../services/ClientServices');
+} = require('../../services/clientServices');
 
 const getClients = async () => {
     const clients = await getAllClients();

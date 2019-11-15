@@ -2,8 +2,8 @@ const {
     createOrder,
     updateOrder,
     deleteOrder
-} = require('../../services/ClientServices');
-const storage = require('./../../utils/storage');
+} = require('../../services/clientServices');
+const storage = require('../../utils/storage');
 
 const createNewOrder = async (_, { data }, { user }) => {
     data.client = user._id;

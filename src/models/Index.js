@@ -1,5 +1,5 @@
-const Clients = require('./Client');
-const Orders = require('./Order');
+const Clients = require('./client');
+const Orders = require('./order');
 
 module.exports = {
     Clients,

@@ -1,4 +1,4 @@
-const { createClient, updateClient, deleteClient } = require('../../services/ClientServices');
+const { createClient, updateClient, deleteClient } = require('../../services/clientServices');
 const authenticate = require('../../utils/authenticate');
 const createNewClient = async (_, { data }) => {
     const client = await createClient(data);
