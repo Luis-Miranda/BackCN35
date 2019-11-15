@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const { getClientByEmail } = require('../services/ClientServices');
+const { getClientByEmail } = require('../services/clientServices');
 
 const verifyToken = async req => {
     try {
